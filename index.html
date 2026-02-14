@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>احمد علي ونجت ❤️</title>
+<style>
+  body {
+    background-color: #ffe6f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+    color: #333;
+  }
+
+  h1 {
+    color: #ff007f;
+    font-size: 50px;
+    text-shadow: 2px 2px #ff99cc;
+  }
+
+  h2 {
+    color: #ff3399;
+    font-size: 35px;
+    margin-top: 40px;
+  }
+
+  h3 {
+    color: #ff66b2;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  ul {
+    list-style-type: square;
+    font-size: 22px;
+    color: #ff1a75;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  .heart {
+    color: red;
+    font-size: 30px;
+    animation: beat 1s infinite;
+  }
+
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+
+  .highlight {
+    background-color: #ffccf2;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  #loveCounter {
+    font-size: 28px;
+    color: #ff0066;
+    margin-top: 30px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #ff3399;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>احمد علي ونجت <span class="heart">❤️</span></h1>
+
+<h2>المميزات</h2>
+<ul>
+  <li>فحل جدًا 💪</li>
+  <li>لا يتركك في المشاكل 🛡️</li>
+  <li>فحل 17pro max 📱</li>
+  <li>يعشق المشيئة ❤️</li>
+  <li>وفي جدًا ومخلص لصاحبه 💖</li>
+</ul>
+
+<h3>أهم المميزات</h3>
+<p class="highlight">حبه كبير جدًا ويفعل كل شيء عشانه 💕</p>
+
+<h2>حب لا ينتهي</h2>
+<p class="highlight">معاه هتحس إنك ملكة العالم 👑🌸</p>
+
+<!-- قلوب تتحرك -->
+<div>
+  <span class="heart">❤️</span>
+  <span class="heart">💖</span>
+  <span class="heart">💘</span>
+  <span class="heart">💕</span>
+  <span class="heart">❤️</span>
+</div>
+
+<!-- عداد الحب -->
+<div id="loveCounter"></div>
+
+<script>
+// العدّاد من 3 سنين
+const startDate = new Date("2023-02-14T00:00:00"); // بداية الحب
+function updateCounter() {
+  const now = new Date();
+  const diff = now - startDate;
+  const years = Math.floor(diff / (1000*60*60*24*365));
+  const months = Math.floor((diff % (1000*60*60*24*365)) / (1000*60*60*24*30));
+  const days = Math.floor((diff % (1000*60*60*24*30)) / (1000*60*60*24));
+  const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+  const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+  const seconds = Math.floor((diff % (1000*60)) / 1000);
+  document.getElementById("loveCounter").innerHTML = `حبنا مستمر من ${years} سنة و ${months} شهر و ${days} يوم و ${hours} ساعة و ${minutes} دقيقة و ${seconds} ثانية ❤️`;
+}
+setInterval(updateCounter, 1000);
+
+// زر تشغيل أغنية (يوتيوب قانوني)
+function playMusic() {
+  window.open("https://youtu.be/bCNp_kCSsYg", "_blank");
+}
+</script>
+
+<button onclick="playMusic()">تشغيل أغنية تامر الجيار 🎵</button>
+
+</body>
+</html>
